@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -10,44 +9,92 @@
         body {
             margin: 0;
             font-family: 'Orbitron', sans-serif;
-            background: #0f0f0f;
+            background: #0d0d0d;
             color: #fff;
+            overflow-x: hidden;
         }
         header {
-            background: #1a1a1a;
-            padding: 20px;
+            background: #111;
+            padding: 40px 0;
             text-align: center;
             border-bottom: 2px solid #444;
         }
         header h1 {
+            font-size: 3.5em;
+            color: #00ffcc;
             margin: 0;
-            font-size: 2.5em;
-            color: #00ffcc;
         }
-        section {
-            padding: 30px;
+        header p {
+            font-size: 1.3em;
+            color: #bbb;
+            margin-top: 10px;
+        }
+        .hero {
+            background: url('https://example.com/hero_image.jpg') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        .products-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .product {
+            background: #222;
+            padding: 25px;
+            border-radius: 8px;
+            width: 250px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        a {
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin-top: 10px;
             color: #00ffcc;
-            text-decoration: none;
-            font-weight: bold;
+        }
+        .product p {
+            font-size: 1.1em;
+            color: #bbb;
+        }
+        .product button {
+            background-color: #00ffcc;
+            color: #111;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
         }
         .contact {
             background: #141414;
-            padding: 20px;
-            border-top: 1px solid #444;
+            padding: 40px;
+            text-align: center;
+            border-top: 2px solid #444;
         }
         .contact h2 {
+            font-size: 2.5em;
             color: #00ffcc;
+            margin-bottom: 20px;
         }
-        .contact p {
-            margin: 10px 0;
+        .contact a {
+            color: #00ffcc;
+            font-weight: bold;
+            text-decoration: none;
         }
         footer {
             background: #111;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             font-size: 0.9em;
             color: #aaa;
             border-top: 1px solid #333;
@@ -60,10 +107,29 @@
         <p>Güvenilir oyun kodları, hesaplar ve daha fazlası</p>
     </header>
 
-    <section>
-        <h2>Hoş geldiniz!</h2>
-        <p>Valorant, PUBG Mobile, Random E-Pin Kodları ve daha fazlası burada.</p>
-        <p>Hesap satın al, kodları kap, hemen oyuna başla!</p>
+    <div class="hero">
+        <p>Gelişmiş Oyun Kodları ve Hesapları Burada</p>
+    </div>
+
+    <section class="products-section">
+        <div class="product">
+            <img src="https://example.com/valorant_code_image.jpg" alt="Valorant Kodları">
+            <h3>Valorant E-Pin</h3>
+            <p>Valorant oyununda kullanabileceğiniz e-pin kodları.</p>
+            <button>Satın Al</button>
+        </div>
+        <div class="product">
+            <img src="https://example.com/pubg_code_image.jpg" alt="PUBG Mobile Kodları">
+            <h3>PUBG Mobile Kodları</h3>
+            <p>PUBG Mobile için UC ve e-pin kodları.</p>
+            <button>Satın Al</button>
+        </div>
+        <div class="product">
+            <img src="https://example.com/random_code_image.jpg" alt="Random Oyun Kodları">
+            <h3>Random Kodlar</h3>
+            <p>Farklı oyunlar için rastgele e-pin kodları.</p>
+            <button>Satın Al</button>
+        </div>
     </section>
 
     <section class="contact">
