@@ -3,145 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felix Epin | Güvenilir Oyun Kodları ve Hesaplar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Orbitron', sans-serif;
-            background: #0d0d0d;
-            color: #fff;
-            overflow-x: hidden;
-        }
-        header {
-            background: #111;
-            padding: 40px 0;
-            text-align: center;
-            border-bottom: 2px solid #444;
-        }
-        header h1 {
-            font-size: 3.5em;
-            color: #00ffcc;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.3em;
-            color: #bbb;
-            margin-top: 10px;
-        }
-        .hero {
-            background: url('https://example.com/hero_image.jpg') no-repeat center center/cover;
-            height: 450px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 2em;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-        }
-        .products-section {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-        .product {
-            background: #222;
-            padding: 25px;
-            border-radius: 8px;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        .product img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .product h3 {
-            margin-top: 10px;
-            color: #00ffcc;
-        }
-        .product p {
-            font-size: 1.1em;
-            color: #bbb;
-        }
-        .product button {
-            background-color: #00ffcc;
-            color: #111;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .contact {
-            background: #141414;
-            padding: 40px;
-            text-align: center;
-            border-top: 2px solid #444;
-        }
-        .contact h2 {
-            font-size: 2.5em;
-            color: #00ffcc;
-            margin-bottom: 20px;
-        }
-        .contact a {
-            color: #00ffcc;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        footer {
-            background: #111;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #aaa;
-            border-top: 1px solid #333;
-        }
-    </style>
+    <title>Felixepin - Oyun Kodları ve Hesap Satışı</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Felix Epin</h1>
-        <p>Güvenilir oyun kodları, hesaplar ve daha fazlası</p>
-    </header>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h1>Felixepin</h1>
+        </div>
+        <ul>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#products">Ürünler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li><a href="#cart">Sepetim</a></li>
+        </ul>
+    </nav>
 
-    <div class="hero">
-        <p>Gelişmiş Oyun Kodları ve Hesapları Burada</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Get Your Game Codes, Accounts, and More!</h2>
+        <p>En popüler oyun kodları, hesaplar ve daha fazlası burada!</p>
+    </section>
 
-    <section class="products-section">
+    <!-- About Us -->
+    <section id="about" class="about">
+        <h2>Hakkımızda</h2>
+        <p>Felixepin, oyuncular için güvenilir bir oyun kodları ve hesap satışı platformudur. En popüler oyunlara ait kodlar, hesaplar ve daha fazlasını uygun fiyatlarla sunuyoruz. Güvenli ödeme yöntemleriyle kolayca alışveriş yapabilirsiniz.</p>
+        <p>Sitemizdeki tüm ürünler orijinal ve güvenli olup, müşteri memnuniyetini ön planda tutuyoruz. Felixepin olarak, sizlere en iyi alışveriş deneyimini sunmak için buradayız.</p>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+        <h2>Ürünler</h2>
         <div class="product">
-            <img src="https://example.com/valorant_code_image.jpg" alt="Valorant Kodları">
+            <img src="https://example.com/valorant_code_image.jpg" alt="Valorant E-Pin">
             <h3>Valorant E-Pin</h3>
             <p>Valorant oyununda kullanabileceğiniz e-pin kodları.</p>
-            <button>Satın Al</button>
+            <button onclick="addToCart('Valorant E-Pin', 10)">Sepete Ekle</button>
         </div>
         <div class="product">
             <img src="https://example.com/pubg_code_image.jpg" alt="PUBG Mobile Kodları">
-            <h3>PUBG Mobile Kodları</h3>
-            <p>PUBG Mobile için UC ve e-pin kodları.</p>
-            <button>Satın Al</button>
+            <h3>PUBG Mobile E-Pin</h3>
+            <p>PUBG Mobile oyununda kullanabileceğiniz e-pin kodları.</p>
+            <button onclick="addToCart('PUBG Mobile E-Pin', 12)">Sepete Ekle</button>
         </div>
-        <div class="product">
-            <img src="https://example.com/random_code_image.jpg" alt="Random Oyun Kodları">
-            <h3>Random Kodlar</h3>
-            <p>Farklı oyunlar için rastgele e-pin kodları.</p>
-            <button>Satın Al</button>
-        </div>
+        <!-- Daha fazla ürün eklemek için burayı genişletebilirsiniz -->
     </section>
 
-    <section class="contact">
+    <!-- Contact -->
+    <section id="contact" class="contact">
         <h2>İletişim</h2>
-        <p>Instagram: <a href="https://instagram.com/felixepin" target="_blank">@felixepin</a></p>
-        <p>WhatsApp: <a href="https://wa.me/905398901843" target="_blank">Mesaj Gönder</a></p>
-        <p>Discord: <a href="https://discord.gg/xbpuPXcwyX" target="_blank">Sunucumuza Katıl</a></p>
-        <p>E-posta: <a href="mailto:felixuc17g@gmail.com">felixuc17g@gmail.com</a></p>
+        <p>Bize ulaşmak için aşağıdaki iletişim kanallarını kullanabilirsiniz:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/felixepin" target="_blank">Instagram: felixepin</a></li>
+            <li><a href="https://wa.me/905398901843" target="_blank">WhatsApp: +90 539 890 18 43</a></li>
+            <li><a href="https://discord.gg/xbpuPXcwyX" target="_blank">Discord: Felixepin Server</a></li>
+            <li><a href="mailto:felixuc17g@gmail.com">E-posta: felixuc17g@gmail.com</a></li>
+        </ul>
     </section>
 
+    <!-- Footer -->
     <footer>
-        &copy; 2025 Felix Epin. Tüm hakları saklıdır.
+        <p>&copy; 2025 Felixepin. Tüm hakları saklıdır.</p>
     </footer>
+
+    <!-- Sepet Script -->
+    <script>
+        function addToCart(product, price) {
+            alert(product + " sepete eklendi!");
+        }
+    </script>
 </body>
 </html>
