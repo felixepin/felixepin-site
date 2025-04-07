@@ -14,7 +14,10 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
     }
     .navbar {
       background-color: #1d1d1d;
@@ -26,10 +29,17 @@
       color: #1d84f4 !important;
     }
     .hero {
-      background: url('https://example.com/hero-background.jpg') no-repeat center center/cover;
+      background: url('https://example.com/gaming-background.jpg') no-repeat center center/cover;
       color: #fff;
       padding: 100px 0;
       text-align: center;
+      background-size: cover;
+      background-position: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #ffffff;
     }
     .btn-primary {
       background-color: #1d84f4;
@@ -51,6 +61,14 @@
       background-color: #1d1d1d;
       color: white;
       padding: 20px 0;
+    }
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -77,7 +95,7 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">
-      <h1 class="display-4">Felixepin</h1>
+      <h1>Felixepin</h1>
       <p class="lead">Oyun Kodları, Hesaplar ve Dijital Ürünler Satışı</p>
       <a href="#products" class="btn btn-primary btn-lg">Ürünlerimize Göz At</a>
     </div>
@@ -89,7 +107,7 @@
       <h2 class="text-center mb-4">Ürünlerimiz</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card">
+          <div class="card product-card">
             <img src="valorant.jpg" class="card-img-top" alt="Valorant Kodları">
             <div class="card-body">
               <h5 class="card-title">Valorant Kodları</h5>
@@ -99,7 +117,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card">
+          <div class="card product-card">
             <img src="pubg-mobile.jpg" class="card-img-top" alt="PUBG Mobile Kodları">
             <div class="card-body">
               <h5 class="card-title">PUBG Mobile Kodları</h5>
@@ -109,7 +127,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card">
+          <div class="card product-card">
             <img src="random-codes.jpg" class="card-img-top" alt="Random Kodlar">
             <div class="card-body">
               <h5 class="card-title">Random Oyun Kodları</h5>
