@@ -1,155 +1,131 @@
-<!DOCTYPE html><html lang="tr">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felix Epin - Güvenilir Oyun Kodu Satışı</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Felix Random Oyun Kodları Mağazası</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
     }
     header {
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      padding: 1rem;
+      background: #1f1f1f;
+      padding: 20px;
       text-align: center;
-      color: white;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
+      font-size: 28px;
+      font-weight: bold;
     }
     .hero {
-      background-image: url('arkaplan3.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 100px 20px;
-      text-align: center;
-      color: white;
+      background: url('https://i.imgur.com/9ZLyeTc.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 10px #000;
+      font-size: 40px;
+      font-weight: bold;
     }
     .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
     }
     .product {
-      background: #1e1e2f;
+      background: #2b2b2b;
       border-radius: 10px;
-      margin: 1rem;
-      padding: 1rem;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      overflow: hidden;
+      box-shadow: 0 0 10px #000;
     }
     .product img {
       width: 100%;
-      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-content {
+      padding: 20px;
     }
     .product h3 {
-      margin-top: 10px;
-      color: #00ffff;
+      margin: 0 0 10px;
     }
     .product p {
-      color: #ddd;
+      font-size: 14px;
     }
-    .product a {
+    .btn {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #00ffff;
-      color: black;
-      border-radius: 5px;
+      background: #00c853;
+      padding: 10px 20px;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
     }
     footer {
-      background: #000;
-      padding: 2rem;
       text-align: center;
-      color: #aaa;
+      padding: 20px;
+      background: #111;
+      font-size: 14px;
     }
-    #chatbot {
+    .chatbot {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #1e1e2f;
+      background: #333;
       color: white;
-      padding: 10px;
+      padding: 15px;
       border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 0 10px #00ffff;
+      max-width: 300px;
+      box-shadow: 0 0 15px #000;
     }
-    #chatlog {
-      height: 150px;
-      overflow-y: auto;
-      font-size: 0.9rem;
-    }
-    #chatinput {
-      width: calc(100% - 22px);
-      padding: 5px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: none;
+    .chatbot p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Felix Epin</h1>
-    <nav>
-      <a href="#urunler">Ürünler</a>
-      <a href="#hakkimizda">Hakkımızda</a>
-    </nav>
-  </header>  <div class="hero">
-    <h2>Oyun Kodlarının En Güvenilir Adresi</h2>
-    <p>Valorant, Pubg, Steam ve daha fazlası</p>
-  </div>  <section id="urunler" class="products">
+
+  <header>GameStore - Oyun Kodları</header>
+
+  <div class="hero">Oyun Keyfinizi Katlayın!</div>
+
+  <section class="products">
     <div class="product">
-      <img src="valorant.jpg" alt="Valorant VP">
-      <h3>Valorant Random VP</h3>
-      <p>50 VP ile 7300 VP arası rastgele gelir.</p>
-      <a href="https://wa.me/905555555555">Satın Al</a>
+      <img src="https://i.imgur.com/FuKy7BR.jpeg" alt="Valorant VP">
+      <div class="product-content">
+        <h3>Valorant Random VP</h3>
+        <p>50 VP'den 7300 VP'ye kadar rastgele kod gönderim! Hemen şansını dene.</p>
+        <a class="btn" href="https://wa.me/905398901843?text=Valorant%20Random%20VP%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
+      </div>
     </div>
     <div class="product">
-      <img src="pubg.jpg" alt="Pubg UC">
-      <h3>PUBG Random UC</h3>
-      <p>30 UC ile 8100 UC arası rastgele gelir.</p>
-      <a href="https://wa.me/905555555555">Satın Al</a>
+      <img src="https://i.imgur.com/bCy69qL.jpeg" alt="PUBG UC">
+      <div class="product-content">
+        <h3>PUBG Random UC</h3>
+        <p>30 UC ile 8100 UC arasında rastgele UC kazanma şansı!</p>
+        <a class="btn" href="https://wa.me/900000000000?text=PUBG%20Random%20UC%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
+      </div>
     </div>
     <div class="product">
-      <img src="steam.jpg" alt="Steam Hesap">
-      <h3>Steam Random Hesap</h3>
-      <p>Rastgele premium veya indirimli Steam hesapları gelir.</p>
-      <a href="https://wa.me/905555555555">Satın Al</a>
+      <img src="https://i.imgur.com/SRxPyKg.jpeg" alt="Steam Hesap">
+      <div class="product-content">
+        <h3>Steam Random Hesap</h3>
+        <p> 1-100 oyun bulunan rastgele bir Steam hesabı kazan!</p>
+        <a class="btn" href="https://wa.me/900000000000?text=Steam%20Random%20Hesap%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
+      </div>
     </div>
-  </section>  <section id="hakkimizda" style="background:#222; padding:2rem; text-align:center;">
-    <h2>Hakkımızda</h2>
-    <p>Felix Epin olarak 2024'ten beri oyunculara en uygun fiyatlarla güvenilir oyun kodları sunuyoruz. Güvenli alışveriş, hızlı teslimat ve müşteri memnuniyeti ilk önceliğimizdir.</p>
-  </section>  <footer>
-    <p>Tüm hakları saklıdır. Felix Epin © 2025</p>
-  </footer>  <div id="chatbot">
-    <div id="chatlog"></div>
-    <input type="text" id="chatinput" placeholder="Yazın ve Enter'a basın...">
-  </div>  <script>
-    const chatlog = document.getElementById('chatlog');
-    const chatinput = document.getElementById('chatinput');
+  </section>
 
-    chatinput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
-        const userText = chatinput.value;
-        chatlog.innerHTML += '<div><strong>Sen:</strong> ' + userText + '</div>';
-        chatinput.value = '';
+  <footer>
+    © 2025 FelixStore | Tüm hakları saklıdır.
+  </footer>
 
-        let botResponse = 'Sorunuzu tam anlayamadım, tekrar yazar mısınız?';
-        if (userText.toLowerCase().includes('valorant')) botResponse = 'Valorant ürünleri VP olarak sunulur. 50-7300 VP arası gelir.';
-        else if (userText.toLowerCase().includes('pubg')) botResponse = 'PUBG ürünleri UC olarak gelir. 30-8100 UC arası rastgele gönderilir.';
-        else if (userText.toLowerCase().includes('ödeme')) botResponse = 'Şu anda ödeme WhatsApp üzerinden alınmaktadır. PayTR sistemimiz de yakında aktif olacak.';
+  <div class="chatbot">
+    <p><strong>Canlı Destek:</strong> Merhaba! Yardımcı olmamı ister misiniz?</p>
+    <p style="font-size: 12px;">Sorularınızı WhatsApp üzerinden iletebilirsiniz.</p>
+  </div>
 
-        chatlog.innerHTML += '<div><strong>Bot:</strong> ' + botResponse + '</div>';
-        chatlog.scrollTop = chatlog.scrollHeight;
-      }
-    });
-  </script></body>
+</body>
 </html>
