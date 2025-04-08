@@ -2,114 +2,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felix E-Pin | Güvenilir Oyun Kodu Satışı</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <title>Felix Epin | Oyun Kodları Satış</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #121212;
-      color: #f0f0f0;
-    }
-    header {
-      background: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('https://cdn.pixabay.com/photo/2021/04/15/09/57/gaming-6178080_1280.jpg') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 36px;
-      font-weight: bold;
-      text-shadow: 2px 2px 10px black;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .product {
-      background: #1e1e1e;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-    .product img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    .product h3 {
-      margin: 15px 0 10px;
-    }
-    .product p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .buy {
-      background: #00ff8c;
-      padding: 10px 20px;
-      border: none;
-      color: black;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    footer {
-      background: #1f1f1f;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-    .chatbot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-    }
-    .chatbot iframe {
-      width: 300px;
-      height: 400px;
-      border: none;
-      border-radius: 10px;
-    }
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }body {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e1e2f;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  color: #facc15;
+  font-size: 2.5rem;
+}
+
+nav {
+  background-color: #151522;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav a {
+  color: #facc15;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('background.jpg') no-repeat center center/cover;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #1a1a2e;
+}
+
+.product {
+  background-color: #2e2e4e;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 1rem;
+  color: #facc15;
+}
+
+.product p {
+  margin: 0.5rem 0;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #facc15;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.about {
+  padding: 2rem;
+  background-color: #1f1f2f;
+}
+
+.about h2 {
+  text-align: center;
+  color: #facc15;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+footer {
+  background-color: #151522;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Live chat widget */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2e2e4e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
   </style>
 </head>
 <body>
-  <header>Felix E-Pin | Oyun Kodları Güvenle Satın Al</header>
-  <div class="hero">En Uygun Fiyatlarla Kodlar Burada!</div>
-  <div class="container">
+  <header>
+    <h1>Felix Epin</h1>
+  </header>  <nav>
+    <a href="#">Anasayfa</a>
+    <a href="#products">Ürünler</a>
+    <a href="#about">Hakkımızda</a>
+    <a href="https://wa.me/905XXXXXXXXX" target="_blank">İletişim</a>
+  </nav>  <section class="hero">
+    <h2>En Uygun Fiyatlarla Oyun Kodları</h2>
+  </section>  <section class="products" id="products">
     <div class="product">
-      <img src="valorant-vp.jpg" alt="Valorant VP">
+      <img src="valorant.jpg" alt="Valorant Random VP">
       <h3>Valorant Random VP</h3>
-      <p>Rastgele VP miktarı içeren Valorant kodu. Sürprizlerle dolu!</p>
-      <a class="buy" href="https://wa.me/905555555555?text=Valorant+Random+VP+siparişi+vermek+istiyorum">Satın Al (WhatsApp)</a>
+      <p>50 VP'den 7300 VP'ye kadar çıkabilir.</p>
+      <a href="https://wa.me/905XXXXXXXXX">Satın Al</a>
     </div>
     <div class="product">
-      <img src="pubg-uc.jpg" alt="PUBG UC">
+      <img src="pubg.jpg" alt="PUBG Random UC">
       <h3>PUBG Random UC</h3>
-      <p>30 UC'den 8100 UC'ye kadar rastgele UC kazan!</p>
-      <a class="buy" href="https://wa.me/905555555555?text=PUBG+Random+UC+siparişi+vermek+istiyorum">Satın Al (WhatsApp)</a>
+      <p>30 UC'den 8100 UC'ye kadar çıkabilir.</p>
+      <a href="https://wa.me/905XXXXXXXXX">Satın Al</a>
     </div>
     <div class="product">
-      <img src="steam-hesap.jpg" alt="Steam Hesap">
+      <img src="steam.jpg" alt="Steam Random Hesap">
       <h3>Steam Random Hesap</h3>
-      <p>İçinde farklı oyunlar olan rastgele Steam hesabı.</p>
-      <a class="buy" href="https://wa.me/905555555555?text=Steam+Random+Hesap+siparişi+vermek+istiyorum">Satın Al (WhatsApp)</a>
+      <p>Rastgele oyunlar içeren Steam hesabı.</p>
+      <a href="https://wa.me/905XXXXXXXXX">Satın Al</a>
     </div>
-  </div>
-  <footer>
-    © 2025 Felix E-Pin | Tüm hakları saklıdır.
-  </footer>  <div class="chatbot">
-    <iframe src="https://tawk.to/chat/YOUR_TAWKTO_ID/1" allow="autoplay; clipboard-write"></iframe>
-  </div>
+  </section>  <section class="about" id="about">
+    <h2>Hakkımızda</h2>
+    <p>Felix Epin, oyun severler için en uygun fiyatlı ve güvenilir oyun kodlarını sunar. Müşteri memnuniyeti önceliğimizdir.</p>
+  </section>  <div id="chatbot">
+    Merhaba! Size nasıl yardımcı olabilirim?
+  </div>  <footer>
+    <p>&copy; 2025 Felix Epin. Tüm hakları saklıdır.</p>
+  </footer>
 </body>
 </html>
