@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Felix Random Oyun Kodları Mağazası</title>
+  <title>Oyun Kodları Mağazası</title>
   <style>
     body {
       margin: 0;
@@ -18,8 +18,20 @@
       font-size: 28px;
       font-weight: bold;
     }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #222;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
     .hero {
-      background: url('https://ibb.co/pvbgYQXQ') no-repeat center center/cover;
+      background: url('https://i.imgur.com/9ZLyeTc.jpg') no-repeat center center/cover;
       height: 300px;
       display: flex;
       justify-content: center;
@@ -63,6 +75,21 @@
       text-decoration: none;
       border-radius: 5px;
     }
+    .section {
+      padding: 40px;
+      background: #1e1e1e;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -87,45 +114,53 @@
 </head>
 <body>
 
-  <header>Felix GameStore </header>
+  <header>GameStore - Oyun Kodları</header>
+
+  <nav>
+    <a href="#urunler">Ürünler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 
   <div class="hero">Oyun Keyfinizi Katlayın!</div>
 
-  <section class="products">
+  <section class="products" id="urunler">
     <div class="product">
-      <img src="https://files.fm/u/abm4pzhdz4" alt="Valorant VP">
+      <img src="https://i.imgur.com/FuKy7BR.jpeg" alt="Valorant VP">
       <div class="product-content">
         <h3>Valorant Random VP</h3>
-        <p>50 VP'den 7300 VP'ye kadar rastgele kod gönderim! Hemen şansını dene.</p>
+        <p>50 VP - 7300 VP arasında rastgele gönderim! Şansını dene ve kazan.</p>
         <a class="btn" href="https://wa.me/905398901843?text=Valorant%20Random%20VP%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
       </div>
     </div>
     <div class="product">
-      <img src="https://files.fm/u/rhq7rg9phc" alt="PUBG UC">
+      <img src="https://i.imgur.com/DH72a7e.jpeg" alt="Brawl Stars Elmas">
       <div class="product-content">
-        <h3>PUBG Random UC</h3>
-        <p>30 UC ile 8100 UC arasında rastgele UC kazanma şansı!</p>
-        <a class="btn" href="https://wa.me/905398901843?text=PUBG%20Random%20UC%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
-      </div>
-    </div>
-    <div class="product">
-      <img src="https://files.fm/u/6q8xt2ke7z" alt="Steam Hesap">
-      <div class="product-content">
-        <h3>Steam Random Hesap</h3>
-        <p> 1-100 oyun bulunan rastgele bir Steam hesabı kazan!</p>
-        <a class="btn" href="https://wa.me/905398901843?text=Steam%20Random%20Hesap%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
+        <h3>Brawl Stars Random Elmas</h3>
+        <p>15 elmas ile 360 elmas arası tamamen rastgele! Hemen satın al, şansını zorla!</p>
+        <a class="btn" href="https://wa.me/905398901843?text=Brawl%20Stars%20Random%20Elmas%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
       </div>
     </div>
   </section>
 
-  <footer>
-    © 2025 FelixStore | Tüm hakları saklıdır.
-  </footer>
+  <section class="section" id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>FelixStore olarak siz değerli oyunculara en uygun fiyatlı oyun kodlarını ve avantajlı dijital ürünleri sunuyoruz. Kaliteli hizmet, güvenli alışveriş ve hızlı teslimat prensibiyle çalışıyoruz. Türkiye'nin dört bir yanına anında teslimat sağlıyoruz.</p>
+  </section>
+
+  <section class="section" id="iletisim">
+    <h2>İletişim</h2>
+    <p>Her türlü soru, öneri ve destek için bizimle iletişime geçebilirsiniz. WhatsApp hattımız üzerinden 7/24 destek sunuyoruz.</p>
+    <p><strong>WhatsApp:</strong> <a style="color: #00e676;" href="https://wa.me/905398901843">+90 539 890 18 43 </a></p>
+    <p><strong>E-posta:</strong> felixuc17g@gmail.com</p>
+  </section>
 
   <div class="chatbot">
-    <p><strong>Canlı Destek:</strong> Merhaba! Yardımcı olmamı ister misiniz?</p>
-    <p style="font-size: 12px;">Sorularınızı WhatsApp üzerinden iletebilirsiniz.</p>
-  </div><a class="btn" href="https://wa.me/905398901843?text=WhatsApp Destek
+    <p><strong>Canlı Destek Botu:</strong></p>
+    <p>Merhaba! Size nasıl yardımcı olabilirim?</p>
+  </div>
+
+  <footer>&copy; 2025 FelixStore. Tüm hakları saklıdır.</footer>
 
 </body>
 </html>
