@@ -1,91 +1,115 @@
 <!DOCTYPE html><html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felix E-Pin | Güvenilir Oyun Kodları</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix E-Pin | Güvenilir Oyun Kodu Satışı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #1e1e2f, #2a2a40);
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
       color: #f0f0f0;
     }
     header {
-      background-color: #161622;
+      background: #1f1f1f;
       padding: 20px;
       text-align: center;
+      font-size: 24px;
+      font-weight: bold;
     }
-    header h1 {
-      margin: 0;
-      color: #ffcc00;
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2021/04/15/09/57/gaming-6178080_1280.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px black;
     }
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product {
+      background: #1e1e1e;
       padding: 20px;
-    }
-    .card {
-      background-color: #29293d;
-      border-radius: 10px;
-      margin: 20px;
-      width: 300px;
+      border-radius: 12px;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
+    .product img {
       width: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      border-radius: 12px;
     }
-    .card h2 {
-      color: #ffcc00;
+    .product h3 {
+      margin: 15px 0 10px;
     }
-    .card p {
-      padding: 0 10px 10px;
+    .product p {
+      font-size: 14px;
+      margin-bottom: 10px;
     }
-    .buy-button {
-      display: inline-block;
-      background-color: #00aaff;
-      color: white;
+    .buy {
+      background: #00ff8c;
       padding: 10px 20px;
-      margin-bottom: 15px;
-      border-radius: 5px;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
       text-decoration: none;
+      display: inline-block;
     }
-    .buy-button:hover {
-      background-color: #0088cc;
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    .chatbot iframe {
+      width: 300px;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Felix E-Pin</h1>
-    <p>Güvenilir ve uygun fiyatlı oyun kodları</p>
-  </header>  <div class="container">
-    <div class="card">
-      <img src="https://i.imgur.com/EKXb4YF.png" alt="Valorant Random VP">
-      <h2>Valorant Random VP</h2>
-      <p>Rastgele 50 VP ile 6250 VP arasında değişen Valorant VP kodları kazanma şansı!</p>
-      <a class="buy-button" href="https://wa.me/905398901843">WhatsApp'tan Satın Al</a>
-    </div><div class="card">
-  <img src="https://i.imgur.com/TXUqTTl.png" alt="PUBG Mobile Random UC">
-  <h2>PUBG Mobile Random UC</h2>
-  <p>30 UC'den 8100 UC'ye kadar rastgele UC hediyesi! Şansını dene.</p>
-  <a class="buy-button" href="https://wa.me/905398901843">WhatsApp'tan Satın Al</a>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/Iw0nBKC.png" alt="Steam Random Hesap">
-  <h2>Steam Random Hesap</h2>
-  <p>İçinde 1-5 arası oyun bulunan rastgele Steam hesapları seni bekliyor!</p>
-  <a class="buy-button" href="https://wa.me/905398901843">WhatsApp'tan Satın Al</a>
-</div>
-
+  <header>Felix E-Pin | Oyun Kodları Güvenle Satın Al</header>
+  <div class="hero">En Uygun Fiyatlarla Kodlar Burada!</div>
+  <div class="container">
+    <div class="product">
+      <img src="valorant-vp.jpg" alt="Valorant VP">
+      <h3>Valorant Random VP</h3>
+      <p>Rastgele VP miktarı içeren Valorant kodu. Sürprizlerle dolu!</p>
+      <a class="buy" href="https://wa.me/905555555555?text=Valorant+Random+VP+siparişi+vermek+istiyorum">Satın Al (WhatsApp)</a>
+    </div>
+    <div class="product">
+      <img src="pubg-uc.jpg" alt="PUBG UC">
+      <h3>PUBG Random UC</h3>
+      <p>30 UC'den 8100 UC'ye kadar rastgele UC kazan!</p>
+      <a class="buy" href="https://wa.me/905555555555?text=PUBG+Random+UC+siparişi+vermek+istiyorum">Satın Al (WhatsApp)</a>
+    </div>
+    <div class="product">
+      <img src="steam-hesap.jpg" alt="Steam Hesap">
+      <h3>Steam Random Hesap</h3>
+      <p>İçinde farklı oyunlar olan rastgele Steam hesabı.</p>
+      <a class="buy" href="https://wa.me/905555555555?text=Steam+Random+Hesap+siparişi+vermek+istiyorum">Satın Al (WhatsApp)</a>
+    </div>
+  </div>
+  <footer>
+    © 2025 Felix E-Pin | Tüm hakları saklıdır.
+  </footer>  <div class="chatbot">
+    <iframe src="https://tawk.to/chat/YOUR_TAWKTO_ID/1" allow="autoplay; clipboard-write"></iframe>
   </div>
 </body>
 </html>
