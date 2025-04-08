@@ -1,124 +1,166 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Felixepin - Oyun Kodları, Hesaplar ve Diğer Dijital Ürünler Satışı">
-  <title>Felixepin - Oyun Kodları ve Hesapları</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Bootstrap CDN for responsive layout -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oyun Kodları Mağazası</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #222;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://i.imgur.com/9ZLyeTc.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 10px #000;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+    .product {
+      background: #2b2b2b;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #000;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-content {
+      padding: 20px;
+    }
+    .product h3 {
+      margin: 0 0 10px;
+    }
+    .product p {
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #00c853;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .section {
+      padding: 40px;
+      background: #1e1e1e;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 14px;
+    }
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 300px;
+      box-shadow: 0 0 15px #000;
+    }
+    .chatbot p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Felixepin</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Ana Sayfa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#products">Ürünler</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Hakkımızda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">İletişim</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+
+  <header>GameStore - Oyun Kodları</header>
+
+  <nav>
+    <a href="#urunler">Ürünler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero bg-dark text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Felixepin</h1>
-      <p class="lead">En Popüler Oyun Kodları, Hesaplar ve Daha Fazlası Burada!</p>
-      <a href="#products" class="btn btn-primary btn-lg">Ürünlerimize Göz At</a>
-    </div>
-  </section>
+  <div class="hero">Oyun Keyfinizi Katlayın!</div>
 
-  <!-- Products Section -->
-  <section id="products" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Ürünlerimiz</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="valorant.jpg" class="card-img-top" alt="Valorant Code">
-            <div class="card-body">
-              <h5 class="card-title">Valorant Kodları</h5>
-              <p class="card-text">En güncel Valorant kodları ile hemen oynamaya başla!</p>
-              <a href="#" class="btn btn-primary">Sepete Ekle</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="pubg-mobile.jpg" class="card-img-top" alt="PUBG Mobile Code">
-            <div class="card-body">
-              <h5 class="card-title">PUBG Mobile Kodları</h5>
-              <p class="card-text">PUBG Mobile için tüm kodlar burada, hemen alın!</p>
-              <a href="#" class="btn btn-primary">Sepete Ekle</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="random-codes.jpg" class="card-img-top" alt="Random Codes">
-            <div class="card-body">
-              <h5 class="card-title">Random Oyun Kodları</h5>
-              <p class="card-text">Farklı oyunlar için random kodlar satın al!</p>
-              <a href="#" class="btn btn-primary">Sepete Ekle</a>
-            </div>
-          </div>
-        </div>
+  <section class="products" id="urunler">
+    <div class="product">
+      <img src="https://i.imgur.com/FuKy7BR.jpeg" alt="Valorant VP">
+      <div class="product-content">
+        <h3>Valorant Random VP</h3>
+        <p>50 VP - 7300 VP arasında rastgele gönderim! Şansını dene ve kazan.</p>
+        <a class="btn" href="https://wa.me/900000000000?text=Valorant%20Random%20VP%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/DH72a7e.jpeg" alt="Brawl Stars Elmas">
+      <div class="product-content">
+        <h3>Brawl Stars Random Elmas</h3>
+        <p>15 elmas ile 360 elmas arası tamamen rastgele! Hemen satın al, şansını zorla!</p>
+        <a class="btn" href="https://wa.me/900000000000?text=Brawl%20Stars%20Random%20Elmas%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Hakkımızda</h2>
-      <p class="text-center">Felixepin, oyun kodları, hesapları ve dijital ürünlerin güvenilir satıcısıdır. Müşterilerimize en iyi hizmeti sunmak için sürekli olarak yenilik yapıyoruz. Tüm ürünlerimiz güvenli ve hızlı bir şekilde teslim edilir. Bizi tercih ettiğiniz için teşekkür ederiz!</p>
-    </div>
+  <section class="section" id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>GameStore olarak siz değerli oyunculara en uygun fiyatlı oyun kodlarını ve avantajlı dijital ürünleri sunuyoruz. Kaliteli hizmet, güvenli alışveriş ve hızlı teslimat prensibiyle çalışıyoruz. Türkiye'nin dört bir yanına anında teslimat sağlıyoruz.</p>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center mb-4">İletişim</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Instagram</h5>
-          <a href="https://instagram.com/felixepin" target="_blank" class="text-white">Instagram'da Bizi Takip Edin</a>
-        </div>
-        <div class="col-md-4">
-          <h5>WhatsApp</h5>
-          <a href="https://wa.me/905398901843" target="_blank" class="text-white">Bize WhatsApp'tan Ulaşın</a>
-        </div>
-        <div class="col-md-4">
-          <h5>Discord</h5>
-          <a href="https://discord.gg/xbpuPXcwyX" target="_blank" class="text-white">Discord Sunucumuza Katılın</a>
-        </div>
-      </div>
-    </div>
+  <section class="section" id="iletisim">
+    <h2>İletişim</h2>
+    <p>Her türlü soru, öneri ve destek için bizimle iletişime geçebilirsiniz. WhatsApp hattımız üzerinden 7/24 destek sunuyoruz.</p>
+    <p><strong>WhatsApp:</strong> <a style="color: #00e676;" href="https://wa.me/900000000000">+90 000 000 00 00</a></p>
+    <p><strong>E-posta:</strong> destek@gamestore.com</p>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Felixepin. Tüm hakları saklıdır.</p>
-  </footer>
+  <div class="chatbot">
+    <p><strong>Canlı Destek Botu:</strong></p>
+    <p>Merhaba! Size nasıl yardımcı olabilirim?</p>
+  </div>
 
-  <!-- Bootstrap JS (Optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>&copy; 2025 GameStore. Tüm hakları saklıdır.</footer>
+
 </body>
 </html>
