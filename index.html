@@ -1,187 +1,94 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felix Epin | Oyun Kodları Satış</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1e1e2f;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      color: #facc15;
-      font-size: 2.5rem;
-    }
-
-    nav {
-      background-color: #151522;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    nav a {
-      color: #facc15;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: url('background.jpg') no-repeat center center/cover;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      color: #fff;
-    }
-
-    .products {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 2rem;
-      background-color: #1a1a2e;
-    }
-
-    .product {
-      background-color: #2e2e4e;
-      padding: 1rem;
-      margin: 1rem;
-      border-radius: 10px;
-      width: 300px;
-      text-align: center;
-    }
-
-    .product img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    .product h3 {
-      margin-top: 1rem;
-      color: #facc15;
-    }
-
-    .product p {
-      margin: 0.5rem 0;
-    }
-
-    .product a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #facc15;
-      color: #000;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .about {
-      padding: 2rem;
-      background-color: #1f1f2f;
-    }
-
-    .about h2 {
-      text-align: center;
-      color: #facc15;
-    }
-
-    .about p {
-      max-width: 800px;
-      margin: 1rem auto;
-      text-align: center;
-    }
-
-    footer {
-      background-color: #151522;
-      color: #aaa;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    /* Live chat widget */
-    #chatbot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #2e2e4e;
-      color: #fff;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelixShop - Oyun Kodları ve E-Pin Satışı</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Felix Epin</h1>
-  </header>
+    <header>
+        <div class="logo">
+            <h1>FelixShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#">Anasayfa</a>
-    <a href="#products">Ürünler</a>
-    <a href="#about">Hakkımızda</a>
-    <a href="https://wa.me/905398901843" target="_blank">İletişim</a>
-  </nav>
+    <section id="hero">
+        <h2>En İyi Oyun Kodları ve E-Pin'ler</h2>
+        <p>FelixShop'ta aradığınız tüm oyun kodları ve e-pin'ler sizleri bekliyor!</p>
+        <a href="#products" class="btn">Ürünlerimize Göz Atın</a>
+    </section>
 
-  <section class="hero">
-    <h2>En Uygun Fiyatlarla Oyun Kodları</h2>
-  </section>
+    <section id="products">
+        <h2>Ürünler</h2>
+        <div class="product">
+            <img src="images/valorant.jpg" alt="Valorant VP">
+            <h3>Valorant Random VP</h3>
+            <p>Valorant için rastgele VP kodları satın al! Bu kodlarla oyununuzu daha hızlı ve güçlü hale getirin. Hesabınızı güçlendirin ve rakiplerinize karşı avantaj elde edin!</p>
+            <a href="https://wa.me/905398901843" class="buy-btn">Satın Al (WhatsApp)</a>
+        </div>
+        <div class="product">
+            <img src="images/pubg.jpg" alt="PUBG UC">
+            <h3>PUBG Random UC</h3>
+            <p>PUBG Mobile için rastgele UC kodları satın al! UC ile oyun içi öğeler satın alarak oyunda fark yaratın. Yeni kıyafetler, kutular ve daha fazlası sizi bekliyor!</p>
+            <a href="https://wa.me/905398901843" class="buy-btn">Satın Al (WhatsApp)</a>
+        </div>
+        <div class="product">
+            <img src="images/efootball.jpg" alt="Efootball Coin">
+            <h3>Efootball Random Coin</h3>
+            <p>Efootball için rastgele Coin kodları satın al! Coinlerinizle futbolcularınızı alabilir, takımlarınızı güçlendirebilirsiniz. Oyunda daha fazla başarı için ihtiyacınız olan Coin burada!</p>
+            <a href="https://wa.me/905398901843" class="buy-btn">Satın Al (WhatsApp)</a>
+        </div>
+        <div class="product">
+            <img src="images/brawlstars.jpg" alt="Brawl Stars Elmas">
+            <h3>Brawl Stars Random Elmas</h3>
+            <p>Brawl Stars için rastgele Elmas kodları satın al! Elmaslarınızla karakterlerinizi yükseltebilir, yeni kutular açabilir ve eğlenceli içeriklere erişebilirsiniz.</p>
+            <a href="https://wa.me/905398901843" class="buy-btn">Satın Al (WhatsApp)</a>
+        </div>
+        <div class="product">
+            <img src="images/steam.jpg" alt="Steam Hesap">
+            <h3>Steam Random Hesap</h3>
+            <p>Steam için rastgele hesaplar satın al! Oyun koleksiyonunuzu genişletmek için uygun fiyatlarla Steam hesapları edinin. İstediğiniz oyunları hemen oynamaya başlayın!</p>
+            <a href="https://wa.me/905398901843" class="buy-btn">Satın Al (WhatsApp)</a>
+        </div>
+    </section>
 
-  <section class="products" id="products">
-    <div class="product">
-      <img src="valorant.jpg" alt="Valorant Random VP">
-      <h3>Valorant Random VP</h3>
-      <p>50 VP'den 7300 VP'ye kadar çıkabilir.</p>
-      <a href="https://wa.me/905398901843">Satın Al</a>
-    </div>
-    <div class="product">
-      <img src="pubg.jpg" alt="PUBG Random UC">
-      <h3>PUBG Random UC</h3>
-      <p>30 UC'den 8100 UC'ye kadar çıkabilir.</p>
-      <a href="https://wa.me/905398901843">Satın Al</a>
-    </div>
-    <div class="product">
-      <img src="steam.jpg" alt="Steam Random Hesap">
-      <h3>Steam Random Hesap</h3>
-      <p>Rastgele oyunlar içeren Steam hesabı.</p>
-      <a href="https://wa.me/905398901843">Satın Al</a>
-    </div>
-  </section>
+    <section id="about">
+        <h2>Hakkımızda</h2>
+        <p> Felix Epin, oyun dünyasının dinamiklerine ayak uyduran, güvenilir ve profesyonel bir online mağaza olarak oyun tutkunlarının yanındadır. Oyun kodları, hesaplar ve dijital ürünler alanında lider bir platform olarak, her türlü ihtiyaca uygun ürünleri siz değerli müşterilerimize sunuyoruz. Valorant VP, PUBG Mobile UC, Steam hesapları ve daha fazlasıyla oyun deneyiminizi üst seviyeye taşımak için buradayız.
 
-  <section class="about" id="about">
-    <h2>Hakkımızda</h2>
-    <p>Felix Epin, oyun severler için en uygun fiyatlı ve güvenilir oyun kodlarını sunar. Müşteri memnuniyeti önceliğimizdir.</p>
-  </section>
+Neden Felix Epin?
 
-  <div id="chatbot">
-    Merhaba! Size nasıl yardımcı olabilirim?
-  </div>
+1. Güvenilirlik ve Şeffaflık: Müşteri memnuniyetini her zaman ön planda tutuyor, güvenli ödeme yöntemleri ve hızlı teslimat süreçleri ile kaliteli hizmet sağlıyoruz.
+2. Hızlı ve Kolay Alışveriş: Kullanıcı dostu tasarımımızla, ürünlerinizi birkaç adımda hızlıca alabilir, hemen kullanmaya başlayabilirsiniz.
+3. Profesyonel Destek: Her türlü sorunuz ve desteğiniz için 7/24 hizmet veren canlı destek hattımız ve WhatsApp üzerinden kolayca bizimle iletişime geçebilirsiniz.
+4. Geniş Ürün Yelpazesi: Oyuncuların ihtiyaç duyabileceği tüm dijital ürünleri güvenle sunuyor, her zaman güncel ve geçerli ürünler sağlıyoruz.
+5. Modern ve Estetik Tasarım: Web sitemiz, kullanımı kolay ve görsel olarak çekici olup, her cihazda mükemmel şekilde çalışacak şekilde tasarlanmıştır.
+Felix Epin, yalnızca güvenli alışveriş deneyimi sunmakla kalmaz, aynı zamanda oyun dünyasında sizin için vazgeçilmez bir dost olur. Oyunların keyfini çıkarırken, biz de yanınızda olacağız. Bizimle güvenle alışveriş yapabilir, her zaman kaliteli ve hızlı hizmetin tadını çıkarabilirsiniz. 
+        </p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Felix Epin. Tüm hakları saklıdır.</p>
-  </footer>
+    <section id="contact">
+        <h2>İletişim</h2>
+        <p>Bize ulaşın:</p>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/felixepin">felixepin</a></li>
+            <li>WhatsApp: <a href="https://wa.me/905398901843">WhatsApp üzerinden iletişime geçin</a></li>
+            <li>Discord: <a href="https://discord.gg/xbpuPXcwyX">Discord Sunucumuza Katılın</a></li>
+            <li>Email: <a href="mailto:felixuc17g@gmail.com">felixuc17g@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FelixShop. Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
