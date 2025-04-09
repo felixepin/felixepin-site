@@ -1,166 +1,115 @@
 <!DOCTYPE html><html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GameStore - Dijital Oyun Mağazası</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyun Kod Mağazası</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: #f5f5f5;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    body {
-      background-color: #0e0e0e;
-      color: #fff;
     }
     header {
-      background: #121212;
+      background-color: #111;
       padding: 20px;
       text-align: center;
-      font-size: 26px;
-      font-weight: bold;
-      color: #00ff99;
     }
-    nav {
-      background: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      padding: 12px;
-      gap: 30px;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #00ff99;
-    }
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-    }
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
+    header h1 {
+      color: #00ffcc;
     }
     .product {
-      background: #1a1a1a;
+      background: #2c2c3a;
       border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .product:hover {
-      transform: scale(1.03);
+      margin: 20px;
+      padding: 20px;
     }
     .product img {
-      width: 100%;
-      height: 180px;
+      max-width: 100%;
+      height: auto;
       border-radius: 8px;
-      object-fit: cover;
     }
-    .product h3 {
-      margin: 10px 0 5px;
-    }
-    .product p {
-      font-size: 14px;
-      opacity: 0.8;
-    }
-    .btn {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 8px 16px;
-      background: #00c853;
-      color: white;
-      text-decoration: none;
+    .buy-btn {
+      background-color: #00ffcc;
+      color: #000;
+      padding: 10px;
+      border: none;
       border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
     }
     .section {
-      padding: 40px 20px;
-      background: #111;
-      text-align: center;
+      padding: 40px;
     }
     .section h2 {
-      margin-bottom: 20px;
-      font-size: 26px;
-      color: #00ff99;
-    }
-    .section p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 16px;
-      line-height: 1.6;
+      color: #00ffcc;
     }
     footer {
-      background: #0a0a0a;
-      text-align: center;
+      background-color: #111;
       padding: 20px;
-      font-size: 14px;
-      color: #888;
+      text-align: center;
+      color: #aaa;
+    }
+    .review {
+      background-color: #333;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
     }
   </style>
 </head>
-<body>  <header>GameStore - Video Oyun Kod Mağazası</header>  <nav>
-    <a href="#urunler">Ürünler</a>
-    <a href="#hakkimizda">Hakkımızda</a>
-    <a href="#iletisim">İletişim</a>
-  </nav>  <div class="hero">
-    <h1>En Uygun Fiyatlarla VP, UC, Coin ve Daha Fazlası!</h1>
-    <p>Güvenli ödeme ve anında teslimat ile oyuncuların tercihi.</p>
-  </div>  <section class="products" id="urunler">
-    <div class="product">
-      <img src="https://i.imgur.com/9pvkDVP.jpg" alt="Valorant VP">
-      <h3>Valorant Random VP</h3>
-      <p>Rastgele Valorant VP kazan! Şansını dene ve uygun fiyata VP kap.</p>
-      <a href="https://wa.me/905XXXXXXXXX" class="btn">Satın Al</a>
-    </div>
-    <div class="product">
-      <img src="https://i.imgur.com/yXTFV8O.jpg" alt="PUBG Mobile">
-      <h3>PUBG Random UC</h3>
-      <p>Rastgele UC içeren paketlerle sürprizler seni bekliyor. Şansını dene!</p>
-      <a href="https://wa.me/905XXXXXXXXX" class="btn">Satın Al</a>
-    </div>
-    <div class="product">
-      <img src="https://i.imgur.com/oSlxJFB.jpg" alt="eFootball 2025">
-      <h3>eFootball 25 Coin Paketi</h3>
-      <p>eFootball 2025 için sürpriz coin miktarları içeren paketler burada.</p>
-      <a href="https://wa.me/905XXXXXXXXX" class="btn">Satın Al</a>
-    </div>
-    <div class="product">
-      <img src="https://i.imgur.com/XK6aBX4.jpg" alt="Steam Hesap">
-      <h3>Steam Random Hesap</h3>
-      <p>Rastgele oyunlar içeren Steam hesapları. Şansa bağlı, heyecan garantili!</p>
-      <a href="https://wa.me/905XXXXXXXXX" class="btn">Satın Al</a>
-    </div>
-    <div class="product">
-      <img src="https://i.imgur.com/Ww4ewsd.jpg" alt="Brawl Stars">
-      <h3>Brawl Stars Random Elmas</h3>
-      <p>Brawl Stars oyuncularına özel rastgele elmas paketleriyle şansını zorla!</p>
-      <a href="https://wa.me/905XXXXXXXXX" class="btn">Satın Al</a>
-    </div>
-  </section>  <section class="section" id="hakkimizda">
-    <h2>Hakkımızda</h2>
-    <p>GameStore, dijital oyun ürünleri satışında hızlı teslimat ve müşteri memnuniyetini esas alan bir platformdur. Oyun tutkunlarının güvenle alışveriş yapabileceği, şansa dayalı ve uygun fiyatlı ürünleriyle her zaman yanınızda.</p>
-  </section>  <section class="section" id="iletisim">
-    <h2>İletişim</h2>
-    <p>Satın alma, destek veya önerileriniz için bizimle WhatsApp üzerinden iletişime geçebilirsiniz.</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/905XXXXXXXXX" style="color: #00ff99;">+90 5XX XXX XX XX</a></p>
-    <p><strong>Discord Sunucumuz:</strong> <a href="https://discord.gg/YOUR_INVITE" target="_blank" style="color: #00ff99;">Sunucumuza Katıl</a></p>
-  </section>  <footer>
-    &copy; 2025 GameStore. Tüm hakları saklıdır.
-  </footer></body>
+<body><header>
+  <h1>Oyun Kod Mağazası</h1>
+</header><div class="section" id="products">
+  <h2>Ürünler</h2>  <div class="product">
+    <h3>Valorant Random VP</h3>
+    <img src="valorant.jpg" alt="Valorant">
+    <p>50 VP ile 7300 VP arasında rastgele VP kazan!</p>
+    <a class="buy-btn" href="https://wa.me/90xxxxxxxxxx">WhatsApp'tan Satın Al</a>
+  </div>  <div class="product">
+    <h3>PUBG Random UC</h3>
+    <img src="pubg.jpg" alt="PUBG">
+    <p>30 UC'den 8100 UC'ye kadar rastgele UC kazan!</p>
+    <a class="buy-btn" href="https://wa.me/90xxxxxxxxxx">WhatsApp'tan Satın Al</a>
+  </div>  <div class="product">
+    <h3>Steam Random Hesap</h3>
+    <img src="steam.jpg" alt="Steam">
+    <p>Rastgele oyun içeren Steam hesabı kazan!</p>
+    <a class="buy-btn" href="https://wa.me/90xxxxxxxxxx">WhatsApp'tan Satın Al</a>
+  </div>  <div class="product">
+    <h3>Brawl Stars Random Elmas</h3>
+    <img src="brawlstars.jpg" alt="Brawl Stars">
+    <p>Rastgele 30 ile 2000 elmas kazan!</p>
+    <a class="buy-btn" href="https://wa.me/90xxxxxxxxxx">WhatsApp'tan Satın Al</a>
+  </div></div><div class="section" id="about">
+  <h2>Hakkımızda</h2>
+  <p>Oyun tutkunları için en güvenilir ve uygun fiyatlı oyun kodları burada! %100 güvenli ödeme, anında teslimat ve kaliteli destek hizmeti.</p>
+</div><div class="section" id="contact">
+  <h2>İletişim</h2>
+  <p>WhatsApp: <a href="https://wa.me/90xxxxxxxxxx">+90xxxxxxxxxx</a></p>
+  <p>Discord Sunucumuz: <a href="https://discord.gg/sunucukodu" target="_blank">Katılmak için tıklayın</a></p>
+</div><div class="section" id="reviews">
+  <h2>Kullanıcı Yorumları</h2>
+  <div id="review-list"></div>
+</div><footer>
+  &copy; 2025 Oyun Kod Mağazası - Tüm hakları saklıdır.
+</footer><script>
+  const reviews = [];
+  for (let i = 1; i <= 100; i++) {
+    reviews.push({
+      user: `Kullanıcı${i}`,
+      comment: "Hızlı teslimat, mükemmel hizmet! Tavsiye ederim.",
+      stars: 5
+    });
+  }
+  const reviewList = document.getElementById("review-list");
+  reviews.forEach(r => {
+    const div = document.createElement("div");
+    div.className = "review";
+    div.innerHTML = `<strong>${r.user}</strong> - ${'★'.repeat(r.stars)}<br>${r.comment}`;
+    reviewList.appendChild(div);
+  });
+</script></body>
 </html>
