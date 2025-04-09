@@ -3,150 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oyun Kodları Mağazası</title>
+  <title>FelixEpin - Oyun Kodları</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: white;
+    }
+    body {
+      background-color: #121212;
+      color: #fff;
     }
     header {
       background: #1f1f1f;
       padding: 20px;
       text-align: center;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
     }
-    .hero {
-      background: url('https://i.imgur.com/9ZLyeTc.jpg') no-repeat center center/cover;
-      height: 300px;
+    nav {
+      background: #292929;
       display: flex;
       justify-content: center;
-      align-items: center;
-      text-shadow: 2px 2px 10px #000;
-      font-size: 40px;
-      font-weight: bold;
+      padding: 10px;
+      gap: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      opacity: 0.8;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      padding: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
     }
     .product {
-      background: #2b2b2b;
+      background: #1e1e1e;
       border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 10px #000;
+      padding: 15px;
+      text-align: center;
     }
     .product img {
       width: 100%;
-      height: 200px;
+      height: 180px;
+      border-radius: 8px;
       object-fit: cover;
     }
-    .product-content {
-      padding: 20px;
-    }
     .product h3 {
-      margin: 0 0 10px;
+      margin: 10px 0 5px;
     }
     .product p {
       font-size: 14px;
+      opacity: 0.8;
     }
     .btn {
-      display: inline-block;
       margin-top: 10px;
+      display: inline-block;
+      padding: 8px 16px;
       background: #00c853;
-      padding: 10px 20px;
       color: white;
       text-decoration: none;
       border-radius: 5px;
     }
+    .section {
+      padding: 40px 20px;
+      background: #181818;
+      text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    .section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
     footer {
+      background: #111;
       text-align: center;
       padding: 20px;
-      background: #111;
       font-size: 14px;
-    }
-    .chatbot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #333;
-      color: white;
-      padding: 15px;
-      border-radius: 10px;
-      max-width: 300px;
-      box-shadow: 0 0 15px #000;
-    }
-    .chatbot p {
-      margin: 0;
     }
   </style>
 </head>
 <body>
 
-  
-  <header>Felix Shop</header>
+  <header>FelixShop- Dijital Ürün Mağazası</header>
 
-  <div class="hero">Oyun Keyfinizi Katlayın!</div>
+  <nav>
+    <a href="#urunler">Ürünler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 
-  <section class="products">
-    <div class="product">
-      <img src="https://i.imgur.com/FuKy7BR.jpeg" alt="Valorant VP">
-      <div class="product-content">
-        <h3>Valorant Random VP</h3>
-        <p>50 VP'den 7300 VP'ye kadar rastgele gönderim! Hemen şansını dene.</p>
-        <a class="btn" href="https://wa.me/900000000000?text=Valorant%20Random%20VP%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
-      </div>
-    </div>
-    <div class="product">
-      <img src="https://i.imgur.com/bCy69qL.jpeg" alt="PUBG UC">
-      <div class="product-content">
-        <h3>PUBG Random UC</h3>
-        <p>30 UC ile 8100 UC arasında rastgele UC kazanma şansı!</p>
-        <a class="btn" href="https://wa.me/900000000000?text=PUBG%20Random%20UC%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
-      </div>
-    </div>
-    <div class="product">
-      <img src="https://i.imgur.com/SRxPyKg.jpeg" alt="Steam Hesap">
-      <div class="product-content">
-        <h3>Steam Random Hesap</h3>
-        <p>İçinde oyun bulunan rastgele bir Steam hesabı kazan!</p>
-        <a class="btn" href="https://wa.me/900000000000?text=Steam%20Random%20Hesap%20satın%20almak%20istiyorum">WhatsApp'tan Al</a>
-      </div>
-    </div>
-  </section>
-<!-- Contact Section -->
-  <section id="contact" class="py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center mb-4">İletişim</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Instagram</h5>
-          <a href="https://instagram.com/felixepin" target="_blank" class="text-white">Instagram'da Bizi Takip Edin</a>
-        </div>
-        <div class="col-md-4">
-          <h5>WhatsApp</h5>
-          <a href="https://wa.me/905398901843" target="_blank" class="text-white">Bize WhatsApp'tan Ulaşın</a>
-        </div>
-        <div class="col-md-4">
-          <h5>Discord</h5>
-          <a href="https://discord.gg/xbpuPXcwyX" target="_blank" class="text-white">Discord Sunucumuza Katılın</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <footer>
-    © 2025 GameStore | Tüm hakları saklıdır.
-  </footer>
-
-  <div class="chatbot">
-    <p><strong>Canlı Destek:</strong> Merhaba! Yardımcı olmamı ister misiniz?</p>
-    <p style="font-size: 12px;">Sorularınızı WhatsApp üzerinden iletebilirsiniz.</p>
+  <div class="hero">
+    <h1>En Uygun Fiyatlarla VP, UC, Elmas ve Daha Fazlası!</h1>
+    <p>Güvenilir satış, anında teslimat.</p>
   </div>
+
+  <section class="products" id="urunler">
+    <div class="product">
+      <img src="https://i.imgur.com/9pvkDVP.jpg" alt="Valorant VP">
+      <h3>Valorant VP</h3>
+      <p>50 VP'den 7300 VP'ye kadar güvenli Valorant puanları!</p>
+      <a class="btn" href="https://wa.me/90xxxxxxxxxx">Satın Al (WhatsApp)</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/LZsE3Iv.jpg" alt="Brawl Stars Elmas">
+      <h3>Brawl Stars Random Elmas</h3>
+      <p>Rastgele elmas miktarı ile sürpriz hediye! Hemen şansını dene!</p>
+      <a class="btn" href="https://wa.me/90xxxxxxxxxx">Satın Al (WhatsApp)</a>
+    </div>
+
+    <!-- Yeni ürünler eklenebilir -->
+  </section>
+
+  <section class="section" id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>FelixEpin olarak dijital oyun kodları, VP, UC, Elmas gibi oyun içi para birimlerini uygun fiyatlarla ve güvenilir şekilde sunuyoruz. Hedefimiz, oyunculara kaliteli hizmet vermek.</p>
+  </section>
+
+  <section class="section" id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bizimle iletişime geçmek için WhatsApp üzerinden ulaşabilirsiniz.</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/90xxxxxxxxxx" style="color:#00e676;">Mesaj Gönder</a></p>
+    <p><strong>Discord Sunucumuz:</strong> <a href="https://discord.gg/sunuculinki" style="color:#42a5f5;">Katılmak için tıkla</a></p>
+  </section>
+
+  <footer>
+    © 2025 FelixEpin. Tüm hakları saklıdır.
+  </footer>
 
 </body>
 </html>
